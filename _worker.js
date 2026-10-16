@@ -18,7 +18,7 @@ export default {
 
     const incomingUrl = new URL(request.url);
     const path = incomingUrl.pathname.replace(/^\/+/, "");
-    const targetUrl = new URL(`https://m.facebook.com/${path}${incomingUrl.search}`);
+    const targetUrl = new URL(`https://bim-proxy-console.exactlamp6.chatgpt.site/${path}${incomingUrl.search}`);
 
     const headers = new Headers();
     for (const [k, v] of request.headers.entries()) {
